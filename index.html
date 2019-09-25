@@ -10,5 +10,28 @@
   <meta name="image_src" content="">
   <meta property="og:image" content="" />
 <link rel="manifest" href="manifest/manifest.json" />
-<script type="text/javascript" src="manifest/service_worker.js"></script>
-</html>
+<script>
+  //service worker
+
+function sw()
+{
+	/** An empty service worker! */
+self.addEventListener('fetch', function(event) {
+  /** An empty fetch handler! */
+});
+
+}
+
+function sworker()
+{
+navigator.serviceWorker && navigator.serviceWorker.register(sw).then(function(registration) {
+  console.log('Excellent, registered with scope: ', registration.scope);
+});
+}
+
+sworker()
+
+
+
+  </script>
+  </html>
