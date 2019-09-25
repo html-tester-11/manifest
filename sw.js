@@ -1,6 +1,7 @@
 /** An empty service worker! */
 self.addEventListener('fetch', function(event) {
   console.log(event)
-  document.write(event)
+  
+  alert(event)
   /** An empty fetch handler! */
 });
