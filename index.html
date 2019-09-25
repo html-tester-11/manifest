@@ -10,6 +10,16 @@
   <meta name="image_src" content="">
   <meta property="og:image" content="" />
 <link rel="manifest" href="manifest/manifest.json" />
-<script type="text/javascript" src="reg.js"></script>
+<script type="text/javascript">
+	window.addEventListener('load', async () => {
+if ('serviceWorker' in navigator) {
+try {
+  await navigator.serviceWorker.register('./sw.js');
+} catch (err) {
+  console.log('ServiceWorker registration failed', err);
+}
+}
+});
+	</script>
 
 	</html>
