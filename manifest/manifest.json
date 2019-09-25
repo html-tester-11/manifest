@@ -7,7 +7,7 @@
   "background_color": "#111111",
   "icons": [
     {
-      "src": "http://www.pngmart.com/files/8/Colorful-Smoke-PNG-HD.png",
+      "src": "../img/n.png",
       "sizes": "192x192",
       "type": "image/png"
     }
